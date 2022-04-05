@@ -8,7 +8,7 @@ other = "Autores"
 other = "Tags"
 
 [socialMedia]
-other = "Redes sociais"
+other = "Social"
 
 [latestPosts]
 other = "Últimos posts"
@@ -30,6 +30,9 @@ other = "Continuar lendo"
 
 [otherLanguages]
 other = "Outros Idiomas"
+
+[archive]
+other = "Arquivo"
 
 [readingTime]
 one = "1 min de leitura"

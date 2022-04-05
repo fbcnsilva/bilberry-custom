@@ -6,27 +6,6 @@ article {
     width: ($site-width - 100px);
     position: relative;
 
-    // :before and :after to generate the < pointer
-    &:before {
-        content: "";
-        display: block;
-        border: 11px solid transparent;
-        border-right-color: #ddd;
-        position: absolute;
-        top: 49px;
-        left: -22px;
-    }
-
-    &:after {
-        content: "";
-        display: block;
-        border: 10px solid transparent;
-        border-right-color: #fff;
-        position: absolute;
-        top: 50px;
-        left: -20px;
-    }
-
     .featured-image {
         width: 100%;
 
@@ -125,7 +104,6 @@ article {
             display: block;
             margin: 2.5rem 0 1rem;
             color: $highlight-color;
-            font-size: 1.125em;
             text-decoration: none;
             font-style: normal;
 

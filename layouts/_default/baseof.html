@@ -117,8 +117,6 @@
 
     {{ partial "footer.html" . }}
 
-    {{ template "_internal/google_analytics_async.html" . }}
-
     {{ if and (isset .Site.Params "enable_mathjax") (eq .Site.Params.enable_mathjax true) }}
     {{ partial "mathjax.html" . }}
     {{ end }}
@@ -134,6 +132,10 @@
 
     {{ if and (isset .Site.Params "algolia_search") (eq .Site.Params.algolia_search true) }}
     {{ partial "algolia-search.html" . }}
+    {{ end }}
+
+    {{ if and (isset .Site.Params "ganalytics") (ne .Site.Params.ganalytics "") }}
+        {{ partial "google-analytics.html" . }}
     {{ end }}
 </body>
 

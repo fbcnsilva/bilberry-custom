@@ -14,18 +14,10 @@ header {
         flex-direction: row;
         align-items: center;
         min-height: 20rem;
+    }
 
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 50px;
-            top: 50px;
-            width: 2px;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            z-index: 1;
-        }
+    .isLanding {
+        padding: 15rem 0;
     }
 
     .logo {
@@ -79,6 +71,10 @@ header {
         h3 {
             margin-bottom: 0;
             font-size: 3.25rem;
+        }
+
+        .subtitle {
+            font-style: italic;
         }
     }
 

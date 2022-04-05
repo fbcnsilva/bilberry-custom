@@ -1,9 +1,12 @@
+{{ $isHome := $.IsNode }}
 {{ if and .Site.Params.permanentTopNav .Site.Params.stickyNav }}
-    <header class="sticky">
+<header class="sticky">
+{{ else if and (isset .Site.Params "customlandingimage") (ne .Site.Params.customLandingImage "") }}
+<header style="background-image: url({{ .Site.Params.customLandingImage | relURL }}); background-size: cover;">    
 {{ else }}
-    <header>
+<header>
 {{ end }}
-    <div class="container">
+    <div class="container {{ if $isHome }}isLanding{{ end }}">
         <div class="logo">
             <a href="{{ .Site.BaseURL | relLangURL }}" class="logo">
                 {{ if and (isset .Site.Params "customimage") (ne .Site.Params.customImage "") }}
@@ -38,9 +41,9 @@
             <div class="languages">
             {{ range $.Site.Home.AllTranslations }}
                 {{ if eq $language .Language }}
-                    <a href="{{ .Permalink }}" class="active">{{ .Language }}</a>
+                    <a href="{{ .Permalink }}" class="active">{{ .Language.LanguageName }}</a>
                 {{ else }}
-                    <a href="{{ .Permalink }}">{{ .Language }}</a>
+                    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
                 {{ end }}
             {{ end }}
             </div>
