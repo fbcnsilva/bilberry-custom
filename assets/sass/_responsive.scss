@@ -117,3 +117,9 @@
         padding: 4rem 1.5em;
     }
 }
+
+@media (min-width: 550px) {
+    .container {
+        width: 60%;
+    }
+}

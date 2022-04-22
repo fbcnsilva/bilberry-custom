@@ -1,13 +1,10 @@
 // Set the width of the main content area
 // Notice that the actual content's width is $site-width - 100px
-$site-width: '100%';
+$site-width: '800px';
 
-$headline-font: 'Open Sans',
-sans-serif;
-$content-font: 'Open Sans',
-sans-serif;
-$article-footer-font: 'Fira Code',
-monospace;
+$headline-font: 'Open Sans', sans-serif;
+$content-font: 'Open Sans', sans-serif;
+$article-footer-font: 'Fira Code', monospace;
 
 // main colors
 $page-background-color: #f1f1f1;
