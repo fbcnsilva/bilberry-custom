@@ -176,7 +176,7 @@ article {
         }
 
         img {
-            max-width: 100%;
+            max-width: 80%;
             display: block;
             margin: 0 auto;
         }
@@ -216,6 +216,12 @@ article {
                         background-color: transparent;
                     }
                 }
+            }
+        }
+
+        .article-title {
+            h1 {
+                font-size: 2rem !important;
             }
         }
     }
